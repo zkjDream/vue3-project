@@ -1,0 +1,52 @@
+{
+  "name": "vue3deom",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vite --mode test",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.7.7",
+    "element-plus": "^2.8.2",
+    "globals": "^15.9.0",
+    "pinia": "^2.2.2",
+    "pinia-plugin-persistedstate": "^4.0.1",
+    "prettier": "^3.3.3",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@types/node": "^22.5.4",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.28.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "sass": "^1.78.0",
+    "typescript": "^5.5.3",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vue-tsc": "^2.0.29"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,vue}": [
+      "",
+      "prettier --write"
+    ]
+  }
+}
